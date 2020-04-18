@@ -28,6 +28,10 @@ public class Day7 {
 			System.out.println(s);
 		}
 		in.close();
+
+		//int[] iii = {1,2,3};
+		//Iterator k = iii.iterator();
+		
 	}
 
 }
