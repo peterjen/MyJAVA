@@ -1,11 +1,9 @@
-import java.util.LinkedList;
+
 
 public class MazeSolverClass {
 
 	public static Maze m = new Maze();
 
-	//static LinkedList<Position> path = new LinkedList<Position>();
-	
 	public static void main(String[] args) {
 		int[][] maze = {
 				{1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0},
