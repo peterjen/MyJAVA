@@ -1,13 +1,49 @@
+import java.util.ArrayList;
 
 public class GenericClass {
 
 	public static void main(String[] args) {
+		
+		IG1();
+		IG2();
+
+		
+	}
+
+	private static void IG2() {
+		ItemGenericPair<String,String> igps1 = new ItemGenericPair<>();
+		igps1.setX("ssx1");
+		igps1.setY("ssy1");
+		System.out.println(igps1.getX());
+		System.out.println(igps1.getY());
+		ItemGenericPair<String,String> igps2 = new ItemGenericPair<>();
+		igps2.setX("ssx2");
+		igps2.setY("ssy2");
+		System.out.println(igps2.getX());
+		System.out.println(igps2.getY());
+		
+		ItemGenericPair<Integer,Integer> igpi = new ItemGenericPair<>();
+		igpi.setX(100);
+		igpi.setY(200);
+		System.out.println(igpi.getX());
+		System.out.println(igpi.getY());
+		
+		ArrayList<ItemGenericPair<String,String>> pairs = new ArrayList<>();
+		pairs.add(igps1);
+		pairs.add(igps2);
+		
+		
+	}
+
+	private static void IG1() {
 		ItemGeneric<String> igs = new ItemGeneric<String>();  // Set Generic Class as String
 		igs.x = "abc";
 		System.out.println(igs.x);
 		System.out.println(igs.getX());
 		igs.setX("def");
 		System.out.println(igs.getX());
+		igs.x = "www";
+		
 		
 		ItemGeneric<Integer> igi = new ItemGeneric<Integer>(); // Set Generic Class as Integer
 		igi.x = 100;
@@ -22,6 +58,7 @@ public class GenericClass {
 		//Person person;
 		//person = igp.getX();
 		System.out.println(igp.getX().email);
+		
 	}
 
 }
