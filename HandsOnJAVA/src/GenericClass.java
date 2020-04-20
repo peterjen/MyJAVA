@@ -1,12 +1,35 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class GenericClass {
 
 	public static void main(String[] args) {
 		
-		IG1();
-		IG2();
+		//IG1();
+		//IG2();
+		genericWildCard();
+	
+	}
 
+	private static void genericWildCard() {
+		Admin a = new Admin();
+		a.email = "aaa.emai.com";
+		a.name = "AAA";
+		
+		ArrayList<Admin> admins = new ArrayList<Admin>();
+		admins.add(a);
+		@SuppressWarnings("unchecked")
+		// Convert Admins List to Person List
+		List<Person> ppp = (List<Person>)(List<?>)admins;
+
+		doSomething(ppp);
+		
+	}
+
+	private static void doSomething(List<Person> ppp) {
+		for (Person p: ppp) {
+			System.out.println(p.email + " " + p.name);
+		}
 		
 	}
 
@@ -31,6 +54,8 @@ public class GenericClass {
 		ArrayList<ItemGenericPair<String,String>> pairs = new ArrayList<>();
 		pairs.add(igps1);
 		pairs.add(igps2);
+		
+
 		
 		
 	}

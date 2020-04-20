@@ -10,6 +10,9 @@ public class Person {
 		this.email = email;
 		this.name = name;
 	}
+	Person(){  // ADDED CONSTRUCTOR here for Admin Class
+		
+	}
 	@Override
 	public int hashCode() {
 		//System.out.println("aaa");
