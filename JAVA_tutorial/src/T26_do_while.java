@@ -14,5 +14,4 @@ public class T26_do_while {
 		System.out.println("Welcome!");
 		scanner.close();
 	}
-
 }
