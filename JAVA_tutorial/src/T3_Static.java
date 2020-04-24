@@ -1,5 +1,5 @@
 
-public class T3 {
+public class T3_Static {
 	private static String s = "aaa";
 	
 	public static void main(String[] args) {
@@ -7,9 +7,10 @@ public class T3 {
 		s = "ddd";
 		System.out.println(s);
 		
-		T3 x = new T3();  
-		T3.taco(); // <static> NO instance of class needed to be created
+		T3_Static x = new T3_Static();  
+		T3_Static.taco(); // <static> NO instance of class needed to be created
 		x.bell();  // instance of class need to be created
+		// x.taco();
 	}
 	
 	public static void taco() {  // <static> NO instance of class needed to be created
