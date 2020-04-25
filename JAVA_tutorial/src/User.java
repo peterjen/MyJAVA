@@ -5,7 +5,15 @@ public class User {
 	private String firstName;
 	public String lastName;
 	
-	public String getFullName() {
+	User (){
+		
+	}
+	User(String f, String l){
+		this.firstName = f;
+		this.lastName = l;
+		
+	}
+	public String getFullName() {  
 		return this.firstName + " " + lastName;
 	}
 	
@@ -16,6 +24,7 @@ public class User {
 		return this.firstName + " " + lastName + " is not a nice guy.";
 	}
 	
+//  Encapsulation : getter/ setter for PRIVATE field(s)- firstName
 	public void setLastName(String str) {
 		this.lastName = str;
 	}

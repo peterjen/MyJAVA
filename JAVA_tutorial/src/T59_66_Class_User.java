@@ -1,16 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyUserClass
+public class T59_66_Class_User
 {
 
 	public static void main(String[] args) {
 		
 		User you = new User();
 		User me = new User();
+		User him = new User("He","Him");  // Define obj with constructor
 		//user.firstName = "Peter";
-		//you.lastName = "Jen";
-		//System.out.println(you.getFullName());
+		you.lastName = "Jen";
+		System.out.println(him.getFullName());
 		
 		you.setFirstName("June");
 		you.setLastName("Chen");
@@ -27,11 +28,19 @@ public class MyUserClass
 		System.out.println(users.get(1).getFullName());
 		
 		
+		T59_66_Class_User x = new T59_66_Class_User();
+		x.tacos();
+		bell();
+		
 	}
 	
-	public void tacos() {
+	public void tacos() {  // instance of class
 		System.out.println("Tacos");
 
+	}
+	
+	public static void bell() {  // static of class
+		System.out.println("Bell");
 	}
 
 }
