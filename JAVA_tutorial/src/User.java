@@ -37,16 +37,16 @@ public class User {
 	}
 	
 	public void printUser() {							// instance method
-		System.out.println(getFullName());
+		System.out.println("USER() Instance : " + getFullName());
 	}
 	
 	public static void printUser(User u) {				// static method
-		System.out.println(u.getFullName());
+		System.out.println("USER() Static : " + u.getFullName());
 	}
 	
 	public static void printUserList(List<User> u) {				// static method
 		for (User i : u) {
-			System.out.println(i.getFullName());
+			System.out.println("USER() Static : " + i.getFullName());
 		}
 		
 	}

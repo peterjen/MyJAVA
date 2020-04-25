@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyUserAutoload67 {
+public class T67_Class_User_Array_load {
 
 	public static void main(String[] args) {
 		User p = new User();
@@ -27,13 +27,13 @@ public class MyUserAutoload67 {
 		}
 		
 		System.out.println("##### Instance vs Static Method ###################");
-		MyUserAutoload67 m = new MyUserAutoload67();  // m is an instance of MyUserAutoload67
+		T67_Class_User_Array_load m = new T67_Class_User_Array_load();  // m is an instance of MyUserAutoload67
 		System.out.println("Call instance method from m");
 		m.printUser(users.get(2));						// printUser here is an instance method from m
 		
 		System.out.println("Call instance method from class USER");
 		users.get(2).printUser();						// printUser here is a instance method from User class
-		
+		System.exit(0);
 		System.out.println("Call static method from class USER");
 		User.printUser(users.get(2));					// printUser here is a static method from User class
 		
@@ -61,6 +61,6 @@ public class MyUserAutoload67 {
 	}	
 
 	public void printUser(User u) {
-		System.out.println(u.getFullName());
+		System.out.println("MAIN() : " + u.getFullName());
 	}
 }
