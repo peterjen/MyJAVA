@@ -51,20 +51,25 @@ public class User {
 		
 	}
 	
+	public static int findUserFromList(List<User> ulist,User u) {
+		return findUserFromList(ulist,u.firstName,u.lastName);
+	}
 	public static int findUserFromList(List<User> ulist,String ff, String ll) {
 		for (int i = 0; i < ulist.size(); i++ ) {
+		//for(User u : ulist) {
 				if (ulist.get(i).getFullName().equals(ff + " " + ll)) {
-					return i;
+				//if (u.getFullName().equals(ff + " " + ll)) {
+						return i;
 				}
 		}
 		return -1;
 	}
-/*
+
 	@Override
 	public String toString() {
-		return "User [getFullName()=" + getFullName() + "]";
+		return "User @Override toString [getFullName()=" + getFullName() + "]";
 	}
-*/
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -73,7 +78,7 @@ public class User {
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		return result;
 	}
-
+/*
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -95,6 +100,6 @@ public class User {
 			return false;
 		return true;
 	}
-	
+	*/
 	
 }
