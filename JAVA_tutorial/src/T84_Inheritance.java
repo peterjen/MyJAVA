@@ -60,9 +60,14 @@ public class T84_Inheritance {
 		t3.sayWelcome();
 		s.sayWelcome();
 		
+	
+		System.out.println("####### T95 Interface from LIST ");
 		List<T95_Talk_Interface> whoCanTalk = new ArrayList<T95_Talk_Interface>();
 		whoCanTalk.add(t3);
 		whoCanTalk.add(s);
+		for (T95_Talk_Interface ttt : whoCanTalk ) {
+			ttt.sayWelcome();
+		}
 		
 		
 		System.out.println("###  T98 enum USAGE");
