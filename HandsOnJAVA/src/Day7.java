@@ -23,7 +23,7 @@ public class Day7 {
 		}
 		
 		name.add(2,"UNO");
-		System.out.println("Use for loop");
+		System.out.println("Use foreach loop");
 		for(String s : name) {
 			System.out.println(s);
 		}
