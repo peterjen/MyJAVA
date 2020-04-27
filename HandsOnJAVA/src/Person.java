@@ -1,4 +1,4 @@
-//import java.util.Objects;
+import java.util.Objects;
 
 public class Person {
 
@@ -15,12 +15,13 @@ public class Person {
 	}
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((email == null) ? 0 : email.hashCode());
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + ((position == null) ? 0 : position.hashCode());
-		return result;
+		return Objects.hash(email,name,position);
+		///final int prime = 31;
+		///int result = 1;
+		///result = prime * result + ((email == null) ? 0 : email.hashCode());
+		///result = prime * result + ((name == null) ? 0 : name.hashCode());
+		///result = prime * result + ((position == null) ? 0 : position.hashCode());
+		///return result;
 	}
 	@Override
 	public boolean equals(Object obj) {
