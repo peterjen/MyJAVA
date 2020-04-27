@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+
 public class MazeSolverClassList {
 	
 	public static void main(String[] args) {
