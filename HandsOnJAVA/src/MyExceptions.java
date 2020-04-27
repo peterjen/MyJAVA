@@ -1,7 +1,7 @@
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.ArrayList;
+//import java.io.FileInputStream;
+//import java.io.FileNotFoundException;
+//import java.io.IOException;
+//import java.util.ArrayList;
 
 public class MyExceptions {
 
@@ -9,7 +9,7 @@ public class MyExceptions {
 		//int x = Integer.parseInt("pizza");
 		//System.out.println(x);
 		
-		ArrayList<Integer> a = new ArrayList<Integer>();
+//		ArrayList<Integer> a = new ArrayList<Integer>();
 		//a.get(5);
 
 		//FileInputStream ff = new FileInputStream("src/Mazes.txt");
