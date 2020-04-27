@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class MyHashCode {
+public class HashCode_Equals_Override_D20 {
 
 	public static void main(String[] args) {
 		// DAY 20
