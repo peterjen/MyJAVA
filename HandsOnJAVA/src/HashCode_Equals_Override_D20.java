@@ -18,10 +18,12 @@ public class HashCode_Equals_Override_D20 {
 		Person q = new Person("ppp@email.com","Peter");
 		Position pos2 = new Position(10,10);
 		q.position = pos2;
-		System.out.println(p.equals(q));
 		System.out.println(p.hashCode());
 		System.out.println(q.hashCode());
-		
+		System.out.println(p == q);
+		System.out.println(p.equals(q));
+
+		System.exit(0);
 
 		//DAY 21
 		HashSet<String> words = new HashSet<String>();
