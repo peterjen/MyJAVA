@@ -18,7 +18,7 @@ public class HashSet_D21 {
 		for (String s : words) {
 			System.out.println(s);  
 		}
-		System.out.println(words.contains("fish"));
+		System.out.println("HASHSE contains(\"fish\"): " + words.contains("fish"));
 		
 		
 		Person p = new Person("ppp@email.com","Peter");
@@ -35,7 +35,7 @@ public class HashSet_D21 {
 		
 		Person newp = new Person("ppp@email.com","Peter");
 		//Position pos1 = new Position(10,10);
-		newp.position = pos1; // newp is not added to ppl, but ppl contains newp
+		newp.position = pos1; // newp is not added to ppl, but ppl contains newp, because we override the equals() in PERSON
 		System.out.println("newp == p? " + newp.equals(p));
 		System.out.println("ppl contains newp? " + ppl.contains(newp));
 		
@@ -43,7 +43,7 @@ public class HashSet_D21 {
 		HashMap<Integer,String> peek = new HashMap<Integer,String>();
 		peek.put(123, "June");
 		peek.put(456, "John");
-		peek.put(789, "CJ");
+		peek.put(123, "CJ");   // Duplicate KEY not allowed in HashMap (so overwrite June)
 		System.out.println("HashMap peek contains? " + peek.containsKey(123));
 		System.out.println(peek.entrySet());
 
