@@ -1,13 +1,31 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericClass {
+public class GenericClass_D22 {
 
 	public static void main(String[] args) {
+		ArrayList<String> aaa = new ArrayList<String>();
+		aaa.add("1");
+		aaa.add("sss");
+		System.out.println(aaa.get(0));
+		System.out.println(aaa.get(1));
 		
+		ItemGeneric<String> itg_str = new ItemGeneric<String>();
+		itg_str.x = "World";
+		System.out.println(itg_str.x);
+		
+		ItemGeneric<Integer> itg_int = new ItemGeneric<Integer>();
+		itg_int.x = 2;
+		System.out.println(itg_int.x);
+		
+		ItemGeneric<Person> itg_person = new ItemGeneric<Person>();
+		itg_person.x = new Person("p@mail.com","P J");
+		System.out.println(itg_person.x.email);
+		System.out.println(itg_person.getX().name);
+		System.exit(0);
 		//IG1();
 		//IG2();
-		genericWildCard();
+		//genericWildCard();
 	
 	}
 

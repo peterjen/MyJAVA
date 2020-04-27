@@ -1,5 +1,5 @@
 
-public class ItemGeneric<T>{
+public class ItemGeneric <T>{
 
 	T x;
 	T getX() {
