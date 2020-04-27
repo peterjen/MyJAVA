@@ -15,6 +15,12 @@ public class T9_PrimitiveDataTypes {
 		System.out.println(good);
 		System.out.println(b);
 		System.out.println(c);
+		System.out.println(sh);
+		System.out.println(i);
+		System.out.println(lo);
+		System.out.println(f);
+		System.out.println(db);
+
 
 
 
