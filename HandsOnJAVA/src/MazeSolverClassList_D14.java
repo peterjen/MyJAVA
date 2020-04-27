@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 
-public class MazeSolverClassList {
+public class MazeSolverClassList_D14 {
 	
 	public static void main(String[] args) {
 		ArrayList<Maze> mazes = new ArrayList<Maze>();
