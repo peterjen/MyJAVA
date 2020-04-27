@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class MazeSolverFromFile {
+public class MazeSolverFromFile_D15 {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Maze m = new Maze();
